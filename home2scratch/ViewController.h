@@ -7,9 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<CBCentralManagerDelegate>
+{
+    CBCentralManager *centralManager;
+}
 
+
+//画面関連
+
+@property (weak, nonatomic) IBOutlet UIButton *btnScan;
+
+@property (weak, nonatomic) IBOutlet UITextField *txtTemperature;
+
+@property (weak, nonatomic) IBOutlet UITextField *txtStatus;
+
+- (IBAction)OnBtnScan:(id)sender;
 
 @end
-

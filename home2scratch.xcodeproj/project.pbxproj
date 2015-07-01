@@ -414,6 +414,7 @@
 				66720F811B415007000C4BA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66720F821B415007000C4BA1 /* Build configuration list for PBXNativeTarget "home2scratchTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +423,7 @@
 				66720F841B415007000C4BA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
