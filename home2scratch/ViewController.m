@@ -125,7 +125,8 @@
         _txtTemperature.text = [NSString stringWithFormat:@"%d", temperature];
         
         NSDictionary *sensors = @{
-                                  @"temperature": [[NSNumber alloc] initWithDouble:temperature / 100.0]
+                                  @"temperature": [[NSNumber alloc] initWithDouble:temperature / 100.0],
+                                  @"temperaturex100": [[NSNumber alloc] initWithDouble:temperature]
                                   };
         [self sensorUpdate:sensors];
     }
