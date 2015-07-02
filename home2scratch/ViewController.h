@@ -8,10 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreBluetooth/CoreBluetooth.h>
+#import "GCDAsyncSocket.h"
 
 @interface ViewController : UIViewController<CBCentralManagerDelegate>
 {
     CBCentralManager *centralManager;
+    GCDAsyncSocket *asyncSocket;
+    NSString *hostAddress;
+    NSString *ipRange;
+    BOOL autoConnecting;
+    int lastNumberOfIPAddress;
+    int retryCount;
 }
 
 
@@ -22,6 +29,11 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtTemperature;
 
 @property (weak, nonatomic) IBOutlet UITextField *txtStatus;
+
+@property (weak, nonatomic) IBOutlet UIButton *connectButton;
+@property (weak, nonatomic) IBOutlet UITextField *hostAddressTextField;
+
+@property (weak, nonatomic) IBOutlet UITextField *debugMessageTextField;
 
 - (IBAction)OnBtnScan:(id)sender;
 

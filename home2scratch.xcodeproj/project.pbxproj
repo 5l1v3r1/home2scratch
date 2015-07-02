@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6655519B1B45836600BC4E8E /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6655519A1B45836600BC4E8E /* GCDAsyncSocket.m */; };
+		6655519E1B4584BA00BC4E8E /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6655519D1B4584BA00BC4E8E /* Utilities.m */; };
 		66720F621B415007000C4BA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66720F611B415007000C4BA1 /* main.m */; };
 		66720F651B415007000C4BA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66720F641B415007000C4BA1 /* AppDelegate.m */; };
 		66720F681B415007000C4BA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66720F671B415007000C4BA1 /* ViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		665551991B45836600BC4E8E /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Libraries/GCDAsyncSocket/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		6655519A1B45836600BC4E8E /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Libraries/GCDAsyncSocket/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		6655519C1B4584BA00BC4E8E /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		6655519D1B4584BA00BC4E8E /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		66720F5C1B415007000C4BA1 /* home2scratch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = home2scratch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66720F601B415007000C4BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66720F611B415007000C4BA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,9 +66,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		665551971B45827B00BC4E8E /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				665551981B45829600BC4E8E /* GCDAsyncSocket */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		665551981B45829600BC4E8E /* GCDAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				665551991B45836600BC4E8E /* GCDAsyncSocket.h */,
+				6655519A1B45836600BC4E8E /* GCDAsyncSocket.m */,
+			);
+			name = GCDAsyncSocket;
+			sourceTree = "<group>";
+		};
 		66720F531B415007000C4BA1 = {
 			isa = PBXGroup;
 			children = (
+				665551971B45827B00BC4E8E /* Libraries */,
 				66720F5E1B415007000C4BA1 /* home2scratch */,
 				66720F781B415007000C4BA1 /* home2scratchTests */,
 				66720F5D1B415007000C4BA1 /* Products */,
@@ -81,6 +105,8 @@
 		66720F5E1B415007000C4BA1 /* home2scratch */ = {
 			isa = PBXGroup;
 			children = (
+				6655519C1B4584BA00BC4E8E /* Utilities.h */,
+				6655519D1B4584BA00BC4E8E /* Utilities.m */,
 				66720F631B415007000C4BA1 /* AppDelegate.h */,
 				66720F641B415007000C4BA1 /* AppDelegate.m */,
 				66720F661B415007000C4BA1 /* ViewController.h */,
@@ -219,9 +245,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6655519B1B45836600BC4E8E /* GCDAsyncSocket.m in Sources */,
 				66720F681B415007000C4BA1 /* ViewController.m in Sources */,
 				66720F651B415007000C4BA1 /* AppDelegate.m in Sources */,
 				66720F621B415007000C4BA1 /* main.m in Sources */,
+				6655519E1B4584BA00BC4E8E /* Utilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
